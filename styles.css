@@ -1,21 +1,27 @@
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
+font-family: system-ui, sans-serif;
   color: black;
-  background-color: #88946B;
+  background-color: #746885;
 }
 
 nav {
   display: block;
-  background-color: #776B94;
+  background-color: #9b86a7;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
 
 #first {
   display: block;
-  background-color: #776B94;
+  background-color: #9b86a7;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
@@ -23,7 +29,7 @@ nav {
 
 #second {
   display: block;
-  background-color: #776B94;
+  background-color: #9b86a7;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
@@ -31,7 +37,7 @@ nav {
 
 #third {
   display: block;
-  background-color: #776B94;
+  background-color: #9b86a7;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
@@ -39,7 +45,7 @@ nav {
 
 main > div{
   display: block;
-  background-color: #776B94;
+  background-color: #9b86a7;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
@@ -64,6 +70,49 @@ h1 {
 }
 
 main > img {
+  display: block;
   border-radius: 25px;
   padding: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+#container {
+  display: block;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  display: block;
+  border-radius: 25px;
+  background-color: #9b86a7;
+  padding: 10px;
+  margin: 10px;
+}
+
+h2 {
+  display: flex;
+}
+
+.add-to-cart-button {
+  background-color: #849688;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #283d3b;
 }
