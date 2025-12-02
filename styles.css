@@ -3,6 +3,11 @@ body {
   font-family: system-ui, sans-serif;
   color: black;
   background-color: #746885;
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #746885;
 }
 
 nav {
@@ -119,7 +124,7 @@ h2 {
   background-color: #283d3b;
 }
 
-input {
+#usrname, #psw, #select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
