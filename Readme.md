@@ -18,6 +18,7 @@ The products page contains a list of products that are offered at the Timeless T
 
 The register page contains a javascript form that allows users to sign up for the Timeless Teacup website. This javascript form features form validation. It ensures users include a lowercase letter, a capital letter, a number, and at least 8 characters in their password. It also ensures that users enter a valid email.
 
+With more time, I would like to add more products and cart system to the website. I'd also add a bit more information to the About Us section.
 
 
 Link to Github Repo: https://github.com/aberdeja/timeless-teacup.git
