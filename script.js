@@ -7,13 +7,13 @@ var length = document.getElementById("length");
 myInput.onfocus = function() {
  document.getElementById("message").style.display = "block";
 }
-// When the user clicks outside of the password field, hide the message box
+
 myInput.onblur = function() {
  document.getElementById("message").style.display = "none";
 }
-// When the user starts to type something inside the password field
+
 myInput.onkeyup = function() {
- // Validate lowercase letters
+ 
  var lowerCaseLetters = /[a-z]/g;
  if(myInput.value.match(lowerCaseLetters)) {
    letter.classList.remove("invalid");
@@ -22,7 +22,7 @@ myInput.onkeyup = function() {
    letter.classList.remove("valid");
    letter.classList.add("invalid");
  }
- // Validate capital letters
+ 
  var upperCaseLetters = /[A-Z]/g;
  if(myInput.value.match(upperCaseLetters)) {
    capital.classList.remove("invalid");
@@ -31,7 +31,7 @@ myInput.onkeyup = function() {
    capital.classList.remove("valid");
    capital.classList.add("invalid");
  }
- // Validate numbers
+ 
  var numbers = /[0-9]/g;
  if(myInput.value.match(numbers)) {
    number.classList.remove("invalid");
@@ -40,7 +40,7 @@ myInput.onkeyup = function() {
    number.classList.remove("valid");
    number.classList.add("invalid");
  }
- // Validate length
+ 
  if(myInput.value.length >= 8) {
    length.classList.remove("invalid");
    length.classList.add("valid");
@@ -49,3 +49,32 @@ myInput.onkeyup = function() {
    length.classList.add("invalid");
  }
 }
+
+const form = document.getElementById('form');
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('emailError');
+
+  
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (emailPattern.test(emailInput.value)) {
+            
+            emailError.textContent = '';
+            alert('Form submitted successfully!');
+            
+        } else {
+            emailError.textContent = 'Please enter a valid email address.';
+        }
+    });
+
+    
+    emailInput.addEventListener('input', function() {
+        if (emailPattern.test(emailInput.value)) {
+            emailError.textContent = '';
+        } else {
+            emailError.textContent = 'Invalid format.';
+        }
+    });
